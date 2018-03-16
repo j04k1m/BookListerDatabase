@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+    <head>
+        <title>Labb2 webb</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="BookController.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="container">
+            <h1>Booklister</h1>
+            <P>Please fill in the fields in the drop down boxes.</P>
+            <div id="row-menu">
+                <div id="row2">
+                id: <input type="text" name="id" id="id">
+                </div>
+                
+                <div id="row3">
+                title: <input type="text" name="title" id="title">
+                </div>
+                
+                <div id="row4">
+                    author: <input type="text" name="author" id="author">
+                </div>
+                    
+                    <button id="CreateBtn"> Create </button>
+                    <button id="UpdateBtn"> Update </button>
+                    <button id="DeleteBtn"> Remove </button>
+                </div>
+                 
+            <a id="ReadBtn">Get All</a>
+            <a id="b2" onclick="ChangeDivsCreateRow()">Create</a>
+            <a id="b3" onclick="ChangeDivsChangeRow()">Change</a>
+            <a id="b4" onclick="ChangeDivsRemoveRow()">Remove</a>
+			<div id="table-row">
+        </div>
+        
+
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Author</th>
+            </tr>
+            <tbody id="list">
+            </tbody>
+        </table>
+        <div id=textbar></div>
+        </div>           
+    </body>
+</html>
